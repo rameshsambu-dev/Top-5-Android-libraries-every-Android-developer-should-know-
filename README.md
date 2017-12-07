@@ -5,15 +5,23 @@ In the last year or so, Android development has really come of age. Android Stud
 
 Here is a selection of five of our favorite ones and a list of links where you can find others.
 
+===========================================================================================================================
+
+
 
 1. RETROFIT
+
+
 From their site: "Retrofit turns your REST API into a Java interface.” It’s an elegant solution for organizing API calls in a project. The request method and relative URL are added with an annotation, which makes code clean and simple.
 
 With annotations, you can easily add a request body, manipulate the URL or headers and add query parameters.
 
 Adding a return type to a method will make it synchronous, while adding a Callback will allow it to finish asynchronously with success or failure.
 
-2.GSON
+
+===========================================================================================================================
+
+2. GSON
 
 Gson is a Java library used for serializing and deserializing Java objects from and into JSON. A task you will frequently need to do if you communicate with APIs. We mostly use JSON because it’s lightweight and much simpler than XML.
 
@@ -24,6 +32,7 @@ String userJSON = new Gson().toJson(user);
 User user = new Gson().fromJson(userJSON, User.class);
 It also plays nice with the next library:
 
+===========================================================================================================================
 
 3. EVENTBUS
 EventBus is a library that simplifies communication between different parts of your application. For example, sending something from an Activity to a running Service, or easy interaction between fragments. Here is an example we use if the Internet connection is lost, showing how to notify an activity:
@@ -83,11 +92,15 @@ public class HomeActivity extends Activity {
 
 }
 
+===========================================================================================================================
 
 
 4.RxJava
 
 RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM.
+
+
+===========================================================================================================================
 
 
 5.Glide
